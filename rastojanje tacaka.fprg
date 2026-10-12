@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="rastojanje tacaka"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-09 01:15:06 PM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMDk7MDE6MDk6MDUgUE07MTkyMw=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMDk7MDE6MTU6MDYgUE07MTsyMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x1, x2, y1, y2, d, m, k" type="Real" array="False" size=""/>
+            <input variable="x1"/>
+            <input variable="y1"/>
+            <input variable="x2"/>
+            <input variable="y2"/>
+            <assign variable="k" expression="abs(x1-x2)"/>
+            <assign variable="m" expression="abs(y1-y2)"/>
+            <assign variable="d" expression="sqrt(k*k+m*m)"/>
+            <output expression="d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

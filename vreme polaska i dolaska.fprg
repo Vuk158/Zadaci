@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="vreme polaska i dolaska"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-16 01:36:50 PM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMTY7MTI6NTk6MDkgUE07MTkzMg=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMTY7MDE6MzY6NTAgUE07MTsyMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hp, mp, sp, hd, md, sd, tp, td, t, h, m, s" type="Integer" array="False" size=""/>
+            <input variable="hp"/>
+            <input variable="mp"/>
+            <input variable="sp"/>
+            <input variable="hd"/>
+            <input variable="md"/>
+            <input variable="sd"/>
+            <assign variable="tp" expression="hp*3600+mp*60+sp"/>
+            <assign variable="td" expression="hd*3600+md*60+sd"/>
+            <assign variable="t" expression="td-tp"/>
+            <assign variable="h" expression="t/3600"/>
+            <assign variable="m" expression="(t%3600)/60"/>
+            <assign variable="s" expression="(t%3600)%60"/>
+            <output expression="h" newline="True"/>
+            <output expression="m" newline="True"/>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

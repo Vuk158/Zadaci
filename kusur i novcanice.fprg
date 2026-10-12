@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kusur i novcanice"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-23 12:32:09 PM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMjM7MTE6NTc6MzEgQU07MTkwNw=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMjM7MTI6MzI6MDkgUE07MTsyMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kusur, dnovac, cena, pethiljade, dvehiljade, hiljadu, petsto, dvesta, sto, pedeset, dvadeset, deset, pet, dva, jedan" type="Integer" array="False" size=""/>
+            <input variable="cena"/>
+            <input variable="dnovac"/>
+            <assign variable="kusur" expression="dnovac-cena"/>
+            <output expression="kusur" newline="True"/>
+            <assign variable="pethiljade" expression="kusur/5000"/>
+            <assign variable="kusur" expression="kusur-(pethiljade*5000)"/>
+            <assign variable="dvehiljade" expression="kusur/2000"/>
+            <assign variable="kusur" expression="kusur-(dvehiljade*2000)"/>
+            <assign variable="hiljadu" expression="kusur/1000"/>
+            <assign variable="kusur" expression="kusur-(hiljadu*1000)"/>
+            <assign variable="petsto" expression="kusur/500"/>
+            <assign variable="kusur" expression="kusur-(petsto*500)"/>
+            <assign variable="dvesta" expression="kusur/200"/>
+            <assign variable="kusur" expression="kusur-(dvesta*200)"/>
+            <assign variable="sto" expression="kusur/100"/>
+            <assign variable="kusur" expression="kusur-(sto*100)"/>
+            <assign variable="pedeset" expression="kusur/50"/>
+            <assign variable="kusur" expression="kusur-(pedeset*50)"/>
+            <assign variable="dvadeset" expression="kusur/20"/>
+            <assign variable="kusur" expression="kusur-(dvadeset*20)"/>
+            <assign variable="deset" expression="kusur/10"/>
+            <assign variable="kusur" expression="kusur-(deset*10)"/>
+            <assign variable="pet" expression="kusur/5"/>
+            <assign variable="kusur" expression="kusur-(pet*5)"/>
+            <assign variable="dva" expression="kusur/2"/>
+            <assign variable="kusur" expression="kusur-(dva*2)"/>
+            <assign variable="jedan" expression="kusur/1"/>
+            <assign variable="kusur" expression="kusur-(jedan*1)"/>
+            <output expression="pethiljade" newline="True"/>
+            <output expression="dvehiljade" newline="True"/>
+            <output expression="hiljadu" newline="True"/>
+            <output expression="petsto" newline="True"/>
+            <output expression="dvesta" newline="True"/>
+            <output expression="sto" newline="True"/>
+            <output expression="pedeset" newline="True"/>
+            <output expression="dvadeset" newline="True"/>
+            <output expression="deset" newline="True"/>
+            <output expression="pet" newline="True"/>
+            <output expression="dva" newline="True"/>
+            <output expression="jedan" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="jedinice,desetice,stotine,hiljade"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-16 01:43:55 PM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMTY7MTI6MDg6MzMgUE07MTkyMw=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMTY7MDE6NDM6NTUgUE07NDsyMDM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="H, S, D, J, n, m" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="J" expression="n%10"/>
+            <assign variable="n" expression="n/10"/>
+            <assign variable="D" expression="n%10"/>
+            <assign variable="n" expression="n/10"/>
+            <assign variable="S" expression="n%10"/>
+            <assign variable="n" expression="n/10"/>
+            <assign variable="H" expression="n%10"/>
+            <assign variable="m" expression="H*100+S*10+J*1"/>
+            <output expression="m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

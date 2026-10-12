@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ograda"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-10 08:19:34 AM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMTA7MDg6MDQ6NTEgQU07MTkwMw=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMTA7MDg6MTk6MzQgQU07MTsyMDE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="d, s, r, d2" type="Real" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <input variable="d"/>
+            <input variable="n"/>
+            <input variable="s"/>
+            <assign variable="d2" expression="d*100"/>
+            <assign variable="r" expression="(d2-n*s)/(n+1)"/>
+            <output expression="r" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

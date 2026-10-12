@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="proizvod cifara"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-23 01:14:07 PM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMjM7MDE6MDg6MjUgUE07MTkyMA=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMjM7MDE6MTQ6MDcgUE07MTsyMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="broj, H, S, D, J, PROIZVOD" type="Integer" array="False" size=""/>
+            <input variable="broj"/>
+            <assign variable="H" expression="broj/1000"/>
+            <assign variable="broj" expression="broj%1000"/>
+            <assign variable="S" expression="broj/100"/>
+            <assign variable="broj" expression="broj%100"/>
+            <assign variable="D" expression="broj/10"/>
+            <assign variable="broj" expression="broj%10"/>
+            <assign variable="J" expression="broj/1"/>
+            <assign variable="PROIZVOD" expression="H*S*D*J"/>
+            <output expression="PROIZVOD" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

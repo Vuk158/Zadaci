@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="OPD pravougaonika sa naspravnim temenima"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-09 01:52:40 PM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMDk7MDE6NDA6MTIgUE07MTkxNg=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMDk7MDE6NTI6NDAgUE07MTsyMDI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="xa, ya, xc, yc, a, b, O, P, d" type="Real" array="False" size=""/>
+            <input variable="xa"/>
+            <input variable="ya"/>
+            <input variable="xc"/>
+            <input variable="yc"/>
+            <assign variable="a" expression="abs(xc-xa)"/>
+            <assign variable="b" expression="abs(yc-ya)"/>
+            <assign variable="O" expression="2*(a+b)"/>
+            <assign variable="P" expression="a*b"/>
+            <assign variable="d" expression="sqrt(a*a+b*b)"/>
+            <output expression="d" newline="True"/>
+            <output expression="O" newline="True"/>
+            <output expression="P" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

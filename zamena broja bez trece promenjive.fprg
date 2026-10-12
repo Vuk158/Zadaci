@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="zamena broja bez trece promenjive"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-23 12:50:42 PM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMjM7MTI6MzI6NTcgUE07MTkyNA=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMjM7MTI6NTA6NDIgUE07MTsyMDI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <assign variable="x" expression="x+y"/>
+            <assign variable="y" expression="x-y"/>
+            <assign variable="x" expression="x-y"/>
+            <output expression="x" newline="True"/>
+            <output expression="y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

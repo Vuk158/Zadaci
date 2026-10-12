@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="levo crno polje"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-16 12:06:22 PM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMTY7MTE6NDk6MzggQU07MTkxNw=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMTY7MTI6MDY6MjIgUE07MTsyMDI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, r, UBP, UBCP, UBBP" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="r"/>
+            <assign variable="UBP" expression="n*r"/>
+            <assign variable="UBCP" expression="(UBP%2)+UBP/2"/>
+            <assign variable="UBBP" expression="UBP-UBCP"/>
+            <output expression="UBP" newline="True"/>
+            <output expression="UBCP" newline="True"/>
+            <output expression="UBBP" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

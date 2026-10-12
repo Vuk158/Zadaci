@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ferenhajt u celzijus"/>
+        <attribute name="authors" value="vuk"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-23 01:41:52 PM"/>
+        <attribute name="created" value="dnVrO1BDLTA2OzIwMjYtMDktMjM7MDE6MzI6NDMgUE07MTkxNw=="/>
+        <attribute name="edited" value="dnVrO1BDLTA2OzIwMjYtMDktMjM7MDE6NDE6NTIgUE07MTsyMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ftemp, ctemp" type="Real" array="False" size=""/>
+            <input variable="ftemp"/>
+            <assign variable="ctemp" expression="((ftemp-32)*5)/9"/>
+            <output expression="ctemp" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
